@@ -2,12 +2,13 @@ import menu from "../assets/icons/menu.svg";
 import arrow from "../assets/icons/arrow.svg";
 import fbIcon from "../assets/icons/fbIcon.svg";
 import insta from "../assets/icons/insta.svg";
-import twitterIcon from "../assets/icons/twitterIcon.svg";
+import linkedIn from "../assets/icons/linkedIn.svg";
+import twitterIcon from "../assets/icons/x_dark.svg";
 
 // images
 import wavyBg from "../assets/images/wavy-lines.png";
 
-const icons = { menu, arrow, twitterIcon, insta, fbIcon };
+const icons = { menu, arrow, twitterIcon, insta, fbIcon, linkedIn };
 
 const images = { wavyBg };
 
@@ -61,6 +62,7 @@ const socialLinks = [
   { id: 1, icon: icons.fbIcon, href: "/" },
   { id: 2, icon: icons.twitterIcon, href: "/" },
   { id: 3, icon: icons.insta, href: "/" },
+  { id: 4, icon: icons.linkedIn, href: "/" },
 ];
 
 const quickLinks = [
@@ -80,5 +82,5 @@ export {
   footerDesc,
   ownerInfo,
   socialLinks,
-  quickLinks
+  quickLinks,
 };
