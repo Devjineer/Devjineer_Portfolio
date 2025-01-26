@@ -10,8 +10,9 @@ const WhatIDo = () => {
       introTitle="How I Can Help"
       introDesc={whatIDoDesc}
       styling="bg-black text-white"
+      introDescStyle="text-white/75"
     >
-      <div className="mt-10">
+      <div className="mt-10 lg:flex items-center justify-between gap-20">
         <RegularList component={ServiceCard} data={services} />
       </div>
     </IntroLayout>

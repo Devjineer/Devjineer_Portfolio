@@ -1,7 +1,7 @@
 import React from "react";
 
-const Logo = () => {
-  return <span className="damion text-2xl underline">Devjineer</span>;
+const Logo = ({styling}) => {
+  return <span className={`damion underline ${styling}`}>Devjineer</span>;
 };
 
 export default Logo;

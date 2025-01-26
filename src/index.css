@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @layer base {
   @font-face {
     font-family: damion;
@@ -22,12 +23,10 @@
 
   :root {
     /* colors */
+    --ash: rgb(247, 249, 252, 0.75)
     /* fonts */
   }
-}
-
-@layer components {
-
+  
 }
 
 @layer utilities {
@@ -40,7 +39,6 @@
   .flex-apart {
     @apply flex items-center justify-between;
   }
-  
   .damion {
     font-family: damion;
   }
@@ -52,4 +50,8 @@
 
 .btn-padded {
   @apply px-5 py-3 lg:px-[30px] lg:py-4
+}
+
+.text-ash {
+  color: var(--ash)
 }

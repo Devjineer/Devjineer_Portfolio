@@ -1,8 +1,19 @@
+import { SecondaryButton } from "./Button";
 import Button from "./Button";
+import Footer from "./Footer";
 import Header from "./Header";
 import IconWrapper from "./IconWrapper";
 import Logo from "./Logo";
 import TitleDescription from "./TitleDescription";
-import { SecondaryButton } from "./Button";
+import Connect from "./Connect";
 
-export { Header, Logo, IconWrapper, TitleDescription, Button, SecondaryButton };
+export {
+  Button,
+  Connect,
+  Footer,
+  Header,
+  IconWrapper,
+  Logo,
+  SecondaryButton,
+  TitleDescription,
+};
