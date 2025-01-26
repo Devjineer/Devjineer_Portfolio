@@ -1,7 +1,12 @@
-import logo from "../assets/icons/logo.svg";
-import line from "../assets/icons/line.svg";
-import comb from "../assets/icons/comb.svg";
-import clipper from "../assets/icons/clipper.svg";
+import menu from "../assets/icons/menu.svg";
+import arrow from "../assets/icons/arrow.svg";
+
+// images
+import wavyBg from "../assets/images/wavy-lines.png";
+
+const icons = { menu, arrow };
+
+const images = {wavyBg};
 
 const navlinks = [
   { title: "Home" },
@@ -11,10 +16,7 @@ const navlinks = [
   { title: "Testimonials" },
 ];
 
-const heroTitle = "Look Good. Feel Great. Every Time";
+const heroTitle = "Building the Future of User Experience, One Pixel at a Time";
 
-const icons = { logo, line, comb, clipper };
-
-const images = {};
 
 export { icons, images, navlinks, heroTitle };

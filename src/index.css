@@ -1,8 +1,55 @@
 @import "tailwindcss";
 
-
 @layer base {
-  body {
-    @apply bg-black
+  @font-face {
+    font-family: damion;
+    src: url(./assets/fonts/Damion-Regular.ttf);
   }
+
+  @font-face {
+    font-family: open_sans_regular;
+    src: url(./assets/fonts/OpenSans-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: open_sans_bold;
+    src: url(./assets/fonts/OpenSans-Bold.ttf);
+  }
+
+  html {
+    font-family: open_sans_regular;
+  }
+
+  :root {
+    /* colors */
+    /* fonts */
+  }
+}
+
+@layer components {
+
+}
+
+@layer utilities {
+  .side-padded {
+    @apply px-5 lg:px-20;
+  }
+  .flex-together {
+    @apply flex items-center justify-center;
+  }
+  .flex-apart {
+    @apply flex items-center justify-between;
+  }
+  
+  .damion {
+    font-family: damion;
+  }
+  
+  .op_bold {
+    font-family: open_sans_bold;
+  }
+}
+
+.btn-padded {
+  @apply px-5 py-3 lg:px-[30px] lg:py-4
 }
