@@ -15,7 +15,7 @@ const Hero = () => {
 
       <TitleDescription
         title={heroTitle}
-        titleStyle="damion text-[2.7rem] text-center md:text-7xl lg:text-8xl text-[#F5F5F5]"
+        titleStyle="damion text-[2.7rem] text-center md:text-7xl lg:text-8xl  text-ash"
         styling="mt-10 mb-14 lg:mt-40"
       />
 

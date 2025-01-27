@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  /* colors */
+  --color-ash: rgb(247, 249, 252, 0.75)
+  /* fonts */
+  /* --font-damion: "damion" */
+}
 
 @layer base {
   @font-face {
@@ -21,13 +27,10 @@
     font-family: open_sans_regular;
   }
 
-  :root {
-    /* colors */
-    --ash: rgb(247, 249, 252, 0.75)
-    /* fonts */
-  }
-  
 }
+
+
+
 
 @layer utilities {
   .side-padded {
@@ -52,6 +55,19 @@
   @apply px-5 py-3 lg:px-[30px] lg:py-4
 }
 
-.text-ash {
+/* .text-ash {
   color: var(--ash)
+} */
+
+@keyframes shimmer {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.animation-shimmer {
+  animation: shimmer 5s linear infinite;
 }

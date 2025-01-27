@@ -10,7 +10,7 @@ const VantaBackground = ({ children, styling }) => {
       effect = CLOUDS({
         el: vantaRef.current,
         THREE,
-        backgroundAlpha: 0.4,
+        backgroundAlpha: 0.8,
       })
     }
     return () => {

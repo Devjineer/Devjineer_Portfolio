@@ -1,7 +1,6 @@
 import React from "react";
-import Logo from "./Logo";
-import IconWrapper from "./IconWrapper";
 import { icons } from "../../constants";
+import { IconWrapper, Logo } from ".";
 
 const Header = () => {
   return (

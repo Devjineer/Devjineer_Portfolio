@@ -1,14 +1,29 @@
-import menu from "../assets/icons/menu.svg";
 import arrow from "../assets/icons/arrow.svg";
+import drill from "../assets/icons/drill.svg";
+import direction from "../assets/icons/direction.svg";
 import fbIcon from "../assets/icons/fbIcon.svg";
 import insta from "../assets/icons/insta.svg";
+import laptop from "../assets/icons/laptop.svg";
 import linkedIn from "../assets/icons/linked.svg";
+import menu from "../assets/icons/menu.svg";
+import mobile from "../assets/icons/mobile.svg";
 import twitterIcon from "../assets/icons/x_dark.svg";
 
 // images
 import wavyBg from "../assets/images/wavy-lines.png";
 
-const icons = { menu, arrow, twitterIcon, insta, fbIcon, linkedIn };
+const icons = {
+  arrow,
+  direction,
+  drill,
+  fbIcon,
+  insta,
+  laptop,
+  linkedIn,
+  menu,
+  mobile,
+  twitterIcon,
+};
 
 const images = { wavyBg };
 
@@ -28,18 +43,21 @@ const whatIDoDesc =
 const services = [
   {
     id: 1,
+    icon: icons.mobile,
     title: "Mobile App Development",
     description:
       "Building user-friendly and performance-optimized mobile applications using React Native.",
   },
   {
     id: 2,
+    icon: icons.laptop,
     title: "Web App Development",
     description:
       "Creating dynamic and responsive web applications with React, tailored to meet client needs.",
   },
   {
     id: 3,
+    icon: icons.drill,
     title: "Mechatronics Engineering",
     description:
       "Offering expertise in Mechatronics, combining mechanical, electronics, and computing to innovate and solve technical challenges.",
@@ -71,6 +89,31 @@ const quickLinks = [
   { id: 3, title: "Capabilities", href: "/" },
 ];
 
+const projects = [
+  {
+    id: 1,
+    title: "Project 1",
+    styling:
+      "lg:col-span-2 border h-[200px] lg:h-96 lg:rounded-tl-2xl rounded-md",
+  },
+  {
+    id: 2,
+    title: "Project 2",
+    styling: "border h-[200px] lg:h-96 lg:rounded-tr-2xl rounded-md",
+  },
+  {
+    id: 3,
+    title: "Project 3",
+    styling: "border h-[200px] lg:h-96 lg:rounded-bl-2xl rounded-md",
+  },
+  { id: 4, title: "Project 4", styling: "border h-[200px] lg:h-96" },
+  {
+    id: 4,
+    title: "Project 5",
+    styling: "border h-[200px] lg:h-96 lg:rounded-br-2xl rounded-md",
+  },
+];
+
 export {
   icons,
   images,
@@ -83,4 +126,5 @@ export {
   ownerInfo,
   socialLinks,
   quickLinks,
+  projects,
 };
