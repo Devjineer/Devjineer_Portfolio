@@ -2,7 +2,7 @@ import menu from "../assets/icons/menu.svg";
 import arrow from "../assets/icons/arrow.svg";
 import fbIcon from "../assets/icons/fbIcon.svg";
 import insta from "../assets/icons/insta.svg";
-import linkedIn from "../assets/icons/linkedIn.svg";
+import linkedIn from "../assets/icons/linked.svg";
 import twitterIcon from "../assets/icons/x_dark.svg";
 
 // images
