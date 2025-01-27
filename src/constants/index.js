@@ -2,6 +2,7 @@ import arrow from "../assets/icons/arrow.svg";
 import drill from "../assets/icons/drill.svg";
 import direction from "../assets/icons/direction.svg";
 import fbIcon from "../assets/icons/fbIcon.svg";
+import github from "../assets/icons/github.svg";
 import insta from "../assets/icons/insta.svg";
 import laptop from "../assets/icons/laptop.svg";
 import linkedIn from "../assets/icons/linked.svg";
@@ -17,6 +18,7 @@ const icons = {
   direction,
   drill,
   fbIcon,
+  github,
   insta,
   laptop,
   linkedIn,
@@ -81,6 +83,7 @@ const socialLinks = [
   { id: 2, icon: icons.twitterIcon, href: "/" },
   { id: 3, icon: icons.insta, href: "/" },
   { id: 4, icon: icons.linkedIn, href: "/" },
+  { id: 5, icon: icons.github, href: "/" },
 ];
 
 const quickLinks = [
