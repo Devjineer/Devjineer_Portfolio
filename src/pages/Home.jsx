@@ -6,10 +6,10 @@ import { images } from "../constants";
 const Home = () => {
   return (
     <>
-      <IconWrapper
+      {/* <IconWrapper
         styling="h-full w-full fixed top-0 left-0 -z-10"
         src={images.wavyBg}
-      />
+      /> */}
       <Hero />
       <WhatIDo />
       <AboutMe />

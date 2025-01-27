@@ -6,6 +6,7 @@ import IconWrapper from "./IconWrapper";
 import Logo from "./Logo";
 import TitleDescription from "./TitleDescription";
 import Connect from "./Connect";
+import VantaBackground from "./VantaBackground";
 
 export {
   Button,
@@ -16,4 +17,5 @@ export {
   Logo,
   SecondaryButton,
   TitleDescription,
+  VantaBackground
 };
