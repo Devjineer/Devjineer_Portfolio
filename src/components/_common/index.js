@@ -7,6 +7,7 @@ import Logo from "./Logo";
 import TitleDescription from "./TitleDescription";
 import Connect from "./Connect";
 import VantaBackground from "./VantaBackground";
+import Overlay from "./Overlay";
 
 export {
   Button,
@@ -17,5 +18,6 @@ export {
   Logo,
   SecondaryButton,
   TitleDescription,
-  VantaBackground
+  VantaBackground,
+  Overlay,
 };

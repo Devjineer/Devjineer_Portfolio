@@ -6,7 +6,10 @@ export const DevGridSheet = ({ children, styling }) => {
     return (
       <>
         {childrenElements.map((child) => {
-          const isMyChild = child.type.name === "DevGridItem" || "RegularList";
+          const isMyChild =
+            child.type.name === "DevGridItem" ||
+            "RegularList" ||
+            "VantaBackground";
           return isMyChild && child;
         })}
       </>
@@ -16,10 +19,6 @@ export const DevGridSheet = ({ children, styling }) => {
   return <div className={styling}>{displayChildren()}</div>;
 };
 
-export const DevGridItem = ({ styling, title, id }) => {
-  return (
-    <div className={styling}>
-      <h3 className="damion">{title}</h3>
-    </div>
-  );
+export const DevGridItem = ({ children, styling }) => {
+  return <div className={styling}>{children}</div>;
 };

@@ -12,6 +12,10 @@ import twitterIcon from "../assets/icons/x_dark.svg";
 
 // images
 import wavyBg from "../assets/images/wavy-lines.png";
+import project1 from "../assets/images/project1.jpg";
+import project2 from "../assets/images/project2.jpg";
+import project3 from "../assets/images/project3.png";
+import project4 from "../assets/images/project4.jpg";
 
 const icons = {
   arrow,
@@ -27,7 +31,7 @@ const icons = {
   twitterIcon,
 };
 
-const images = { wavyBg };
+const images = { wavyBg, project1, project2, project3, project4 };
 
 const navlinks = [
   { title: "Home" },
@@ -95,25 +99,36 @@ const quickLinks = [
 const projects = [
   {
     id: 1,
-    title: "Project 1",
+    company: "Techies Collabs And Upskill",
+    stack: [],
+    projectImage: images.project1,
+    title: "EcoRide",
     styling:
       "lg:col-span-2 border h-[200px] lg:h-96 lg:rounded-tl-2xl rounded-md",
   },
   {
     id: 2,
-    title: "Project 2",
+    company: "WAGMI",
+    stack: [],
+    projectImage: images.project2,
+    title: "Dream House Renovations",
     styling: "border h-[200px] lg:h-96 lg:rounded-tr-2xl rounded-md",
   },
   {
     id: 3,
-    title: "Project 3",
+    company: "Personal Project",
+    stack: [],
+    projectImage: images.project3,
+    title: "Braniac",
     styling: "border h-[200px] lg:h-96 lg:rounded-bl-2xl rounded-md",
   },
-  { id: 4, title: "Project 4", styling: "border h-[200px] lg:h-96" },
   {
     id: 4,
-    title: "Project 5",
-    styling: "border h-[200px] lg:h-96 lg:rounded-br-2xl rounded-md",
+    company: "Personal Project",
+    stack: [],
+    projectImage: images.project4,
+    title: "Apple Site",
+    styling: "border h-[200px] lg:h-96",
   },
 ];
 
