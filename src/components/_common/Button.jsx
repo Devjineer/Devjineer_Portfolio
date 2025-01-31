@@ -3,6 +3,8 @@ import IconWrapper from "./IconWrapper";
 
 const getBtnVariant = (variant) => {
   switch (variant) {
+    case "clear":
+      return "bg-transparent";
     case "secondary":
       return "bg-transparent border-b-3 border-gray-400";
     default:
@@ -13,7 +15,7 @@ const getBtnVariant = (variant) => {
 const Button = ({ styling, text, variant, iconLeft, iconRight, iconStyle }) => {
   return (
     <button
-      className={`btn-padded flex-together cursor-pointer rounded-sm ${styling} ${getBtnVariant(
+      className={`flex-together cursor-pointer rounded-sm ${styling} ${getBtnVariant(
         variant
       )}`}
     >

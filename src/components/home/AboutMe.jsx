@@ -1,13 +1,19 @@
-import React from "react";
 import { IntroLayout } from "../_layout";
+import { DevGridSheet } from "../_custom";
+import { RegularList } from "../_design-patterns";
+import { aboutItems } from "@/constants";
+import { AboutCard } from "../_cards";
 
 const AboutMe = () => {
   return (
     <IntroLayout
       introTitle="About Me"
-      introDesc="It is going to be a bento grid"
       styling="bg-black/3 backdrop-blur-sm"
-    ></IntroLayout>
+    >
+      <DevGridSheet styling="grid grid-cols-1 lg:grid-cols-2 gap-2">
+        <RegularList data={aboutItems} component={AboutCard} />
+      </DevGridSheet>
+    </IntroLayout>
   );
 };
 

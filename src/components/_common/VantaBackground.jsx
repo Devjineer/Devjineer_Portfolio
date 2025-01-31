@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import CLOUDS from "vanta/dist/vanta.rings.min";
-import BIRDS from "vanta/dist/vanta.birds.min";
+import RINGS from "vanta/dist/vanta.rings.min";
+import CLOUDS from "vanta/dist/vanta.clouds.min";
+import GLOBE from "vanta/dist/vanta.globe.min";
 
 const VantaBackground = ({ children, styling, opacity = 0.8, type }) => {
   const vantaRef = useRef();
@@ -9,14 +10,14 @@ const VantaBackground = ({ children, styling, opacity = 0.8, type }) => {
     let effect;
     if (vantaRef.current) {
       if (type) {
-        effect = BIRDS({
+        effect = CLOUDS({
           el: vantaRef.current,
           THREE,
           backgroundAlpha: opacity,
-          color: 'black'
+          speed: 2, sunColor: 'red'
         });
       } else {
-        effect = CLOUDS({
+        RINGS({
           el: vantaRef.current,
           THREE,
           backgroundAlpha: opacity,
@@ -26,7 +27,7 @@ const VantaBackground = ({ children, styling, opacity = 0.8, type }) => {
     return () => {
       if (effect) effect.destroy();
     };
-  }, []);
+  }, [opacity]);
   return (
     <div ref={vantaRef} className={styling}>
       {children}

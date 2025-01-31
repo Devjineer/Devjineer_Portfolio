@@ -8,6 +8,8 @@ import TitleDescription from "./TitleDescription";
 import Connect from "./Connect";
 import VantaBackground from "./VantaBackground";
 import Overlay from "./Overlay";
+import PhotoSlide from "./PhotoSlide";
+import Stack from "./Stack";
 
 export {
   Button,
@@ -19,5 +21,7 @@ export {
   SecondaryButton,
   TitleDescription,
   VantaBackground,
+  PhotoSlide,
   Overlay,
+  Stack,
 };

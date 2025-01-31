@@ -17,7 +17,7 @@ const RecentWorks = () => {
         <RegularList data={projects} component={ProjectCard} />
 
         <DevGridItem styling="h-[200px] lg:h-96 lg:rounded-br-2xl rounded-md bg-black">
-          <VantaBackground styling="size-full" opacity={0.0} type={true} />
+          <VantaBackground styling="size-full" opacity={0.8} type={true} />
         </DevGridItem>
       </DevGridSheet>
     </IntroLayout>

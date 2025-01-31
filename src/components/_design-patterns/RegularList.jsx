@@ -1,10 +1,10 @@
 import React from "react";
 
-const RegularList = ({ data, component: Component }) => {
+const RegularList = ({ data, component: Component, props }) => {
   return (
     <>
       {data.map((item) => (
-        <Component {...{...item}} />
+        <Component {...{ ...item, ...props }} />
       ))}
     </>
   );
