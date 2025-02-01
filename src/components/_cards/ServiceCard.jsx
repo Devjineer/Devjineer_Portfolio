@@ -4,7 +4,7 @@ import { Shimmer } from "../_custom";
 
 const ServiceCard = ({ id, title, description, icon }) => {
   return (
-    <Shimmer styling="mb-10 lg:mb-0 py-5 w-full lg:w-[calc(100/3)]">
+    <Shimmer styling="mb-10 lg:mb-0 py-5 w-full lg:w-[calc(100/3)] bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] border-slate-800 text-slate-400 ">
       <span className="damion text-[2rem]">{id.toString().padStart(2, 0)}</span>
       <TitleDescription
         icon={icon}

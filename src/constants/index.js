@@ -152,6 +152,32 @@ const aboutItems = [
     id: 3,
     stack: [cloudinary, javascript, react, reactrouter, redux, typescript],
   },
+  {
+    id: 4,
+    experiences: [
+      {
+        company: "Naheera Agency",
+        startDate: "2021",
+        endDate: "2022",
+        role: "Jnr Frontend Developer",
+        description: "Deescription",
+      },
+      {
+        company: "World Class ICT Solutions",
+        startDate: "2022",
+        endDate: "2024",
+        role: "Frontend Developer",
+        description: "Deescription",
+      },
+      {
+        company: "Techies Collabs & Upskill",
+        startDate: "2024",
+        endDate: "2024",
+        role: "Lead Frontend Developer",
+        description: "Deescription",
+      },
+    ],
+  },
 ];
 
 export {
