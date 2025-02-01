@@ -138,11 +138,15 @@ const projects = [
   },
 ];
 
-const aboutText =
-  'I\'m Josemaria Sopuruchukwu Ofurum, a Mechanical Engineer who discovered a new passion: web development.  While my formal education focused on the mechanics of the physical world, my curiosity and drive led me to explore the world of code.  This journey has transformed me into a "Devjineer," a unique blend of engineering principles and technical proficiency. I thrive on using my diverse skillset and a range of development tools to create visually appealing and functional web experiences. My engineering background gives me a strong foundation in problem-solving and a meticulous approach to development, allowing me to build robust and innovative solutions.';
-
 const aboutItems = [
-  { id: 1, summary: aboutText },
+  {
+    id: 1,
+    summary: [
+      "I'm Josemaria Sopuruchukwu Ofurum, a Mechanical Engineer who discovered a new passion: web development.  While my formal education focused on the mechanics of the physical world, my curiosity and drive led me to explore the world of code.",
+      'This journey has transformed me into a "Devjineer," a unique blend of engineering principles and technical proficiency. I thrive on using my diverse skillset and a range of development tools to create visually appealing and functional web experiences.',
+      "My engineering background gives me a strong foundation in problem-solving and a meticulous approach to development, allowing me to build robust and innovative solutions.",
+    ],
+  },
   { id: 2, title: "Photo", photos: [project1, project2, project3, project4] },
   {
     id: 3,

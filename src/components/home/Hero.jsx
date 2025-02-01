@@ -15,15 +15,15 @@ const Hero = () => {
 
       <TitleDescription
         title={heroTitle}
-        titleStyle="damion text-[2.7rem] text-center md:text-7xl lg:text-8xl  text-ash"
+        titleStyle="damion text-[2.7rem] text-center md:text-7xl lg:text-8xl  text-white"
         styling="mt-10 mb-14 lg:mt-40"
       />
 
       <div className="flex-together">
-        <Button text="Explore Work" styling="font-bold text-sm" />
+        <Button text="Explore Work" styling="btn-padded font-bold text-sm" />
         <SecondaryButton
           text="Learn More"
-          styling="font-bold ml-3 text-sm"
+          styling="font-bold ml-3 text-sm btn-padded"
           iconLeft={icons.arrow}
           iconStyle="size-4 mr-1"
         />

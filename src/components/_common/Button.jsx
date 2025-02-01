@@ -12,12 +12,21 @@ const getBtnVariant = (variant) => {
   }
 };
 
-const Button = ({ styling, text, variant, iconLeft, iconRight, iconStyle }) => {
+const Button = ({
+  styling,
+  text,
+  variant,
+  iconLeft,
+  iconRight,
+  iconStyle,
+   ...props
+}) => {
   return (
     <button
       className={`flex-together cursor-pointer rounded-sm ${styling} ${getBtnVariant(
         variant
       )}`}
+      {...props}
     >
       {iconLeft && (
         <IconWrapper src={iconLeft} styling={iconStyle} addedIconStyles="" />

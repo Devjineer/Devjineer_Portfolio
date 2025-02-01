@@ -10,6 +10,7 @@ import VantaBackground from "./VantaBackground";
 import Overlay from "./Overlay";
 import PhotoSlide from "./PhotoSlide";
 import Stack from "./Stack";
+import Paragraphing from "./Paragraphing";
 
 export {
   Button,
@@ -24,4 +25,5 @@ export {
   PhotoSlide,
   Overlay,
   Stack,
+  Paragraphing,
 };

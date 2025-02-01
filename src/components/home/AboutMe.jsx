@@ -6,10 +6,7 @@ import { AboutCard } from "../_cards";
 
 const AboutMe = () => {
   return (
-    <IntroLayout
-      introTitle="About Me"
-      styling="bg-black/3 backdrop-blur-sm"
-    >
+    <IntroLayout introTitle="About Me" styling="bg-black/3 backdrop-blur-sm">
       <DevGridSheet styling="grid grid-cols-1 lg:grid-cols-2 gap-2">
         <RegularList data={aboutItems} component={AboutCard} />
       </DevGridSheet>
