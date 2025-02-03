@@ -11,6 +11,8 @@ import Overlay from "./Overlay";
 import PhotoSlide from "./PhotoSlide";
 import Stack from "./Stack";
 import Paragraphing from "./Paragraphing";
+import Nav from "./Nav";
+import MobileNav from "./MobileNav";
 
 export {
   Button,
@@ -23,6 +25,8 @@ export {
   TitleDescription,
   VantaBackground,
   PhotoSlide,
+  Nav,
+  MobileNav,
   Overlay,
   Stack,
   Paragraphing,

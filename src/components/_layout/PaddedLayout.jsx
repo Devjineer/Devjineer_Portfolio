@@ -1,8 +1,8 @@
 import React from "react";
 
-const PaddedLayout = ({ children, styling }) => {
+const PaddedLayout = ({ children, styling, id }) => {
   return (
-    <section className={`min-h-20 side-padded py-20 ${styling}`}>
+    <section id={id} className={`min-h-20 side-padded py-20 ${styling}`}>
       {children}
     </section>
   );

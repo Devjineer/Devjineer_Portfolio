@@ -12,6 +12,7 @@ const RecentWorks = () => {
       introTitle="Explore My Portfolio"
       introDesc={recentWorksDesc}
       styling="bg-white"
+      id="works"
     >
       <DevGridSheet styling="grid grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-4 mt-6">
         <RegularList data={projects} component={ProjectCard} />

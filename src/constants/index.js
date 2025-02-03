@@ -40,11 +40,10 @@ const icons = {
 const images = { wavyBg, project1, project2, project3, project4 };
 
 const navlinks = [
-  { title: "Home" },
-  { title: "About Us" },
-  { title: "Services" },
-  { title: "Gallery" },
-  { title: "Testimonials" },
+  { title: "Home", href: "#home" },
+  { title: "Services", href: "#services" },
+  { title: "About", href: "#about" },
+  { title: "Works", href: "#works" },
 ];
 
 const heroTitle = "Building the Future of User Experience, One Pixel at a Time";

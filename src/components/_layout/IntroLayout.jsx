@@ -2,9 +2,9 @@ import React from "react";
 import PaddedLayout from "./PaddedLayout";
 import { TitleDescription } from "../_common";
 
-const IntroLayout = ({ introTitle, introDesc, children, styling, introDescStyle }) => {
+const IntroLayout = ({ introTitle, introDesc, children, styling, introDescStyle, id }) => {
   return (
-    <PaddedLayout styling={styling}>
+    <PaddedLayout id={id} styling={styling}>
       <TitleDescription
         title={introTitle}
         desc={introDesc}

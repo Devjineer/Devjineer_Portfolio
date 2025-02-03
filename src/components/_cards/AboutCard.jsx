@@ -7,7 +7,7 @@ const aboutCardStyling = {
   1: "lg:pe-4 py-4",
   2: "",
   3: "",
-  4: "lg:col-span-2 lg:flex space-y-5 lg:space-y-0  items-center justify-between gap-x-5",
+  4: "lg:col-span-2 lg:flex space-y-5 lg:space-y-0  items-center justify-between gap-x-5 lg:mt-4",
 };
 
 const AboutCard = ({ summary, title, photos, stack, id, experiences }) => {
@@ -18,8 +18,17 @@ const AboutCard = ({ summary, title, photos, stack, id, experiences }) => {
       case 2:
         return <PhotoSlide photos={photos} />;
       case 4:
-        return ( 
-          <RegularList data={experiences} component={XpCard} styling="flex-1" />
+        return (
+          <>
+            <span className="damion text-2xl lg:text-4xl underline">
+              Experience
+            </span>
+            <RegularList
+              data={experiences}
+              component={XpCard}
+              styling="flex-1 p-5 rounded-lg shadow-2xl"
+            />
+          </>
         );
       default:
         // return <Stack stacks={stack} />;
