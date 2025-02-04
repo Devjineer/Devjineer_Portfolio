@@ -33,7 +33,7 @@ const PhotoSlide = ({ photos }) => {
         onClick={prevPhoto}
       />
 
-      {photos.map((item, index) => {
+      {photos.map(({photoSrc, photoStyle}, index) => {
         let styling = "opacity-0";
         if (index === activeIndex) {
           styling = "opacity-100";
@@ -41,10 +41,10 @@ const PhotoSlide = ({ photos }) => {
 
         return (
           <IconWrapper
-            src={item}
+            src={photoSrc}
             key={index}
             styling={`-z-10 absolute h-full w-full top-0 left-0 ${styling}`}
-            iconStyle=""
+            addedIconStyles={`object-cover ${photoStyle}`}
           />
         );
       })}

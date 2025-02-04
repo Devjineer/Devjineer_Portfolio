@@ -5,7 +5,7 @@ import SocialIcon from './SocialIcon'
 
 const Connect = () => {
   return (
-    <div className='flex items-center gap-x-2'>
+    <div className='flex items-center gap-x-5'>
       <RegularList data={socialLinks} component={SocialIcon} />
     </div>
   )

@@ -1,4 +1,5 @@
 import arrow from "../assets/icons/arrow.svg";
+import close from "../assets/icons/close.svg";
 import drill from "../assets/icons/drill.svg";
 import direction from "../assets/icons/direction.svg";
 import fbIcon from "../assets/icons/fbIcon.svg";
@@ -18,12 +19,16 @@ import twitterIcon from "../assets/icons/x_dark.svg";
 
 // images
 import wavyBg from "../assets/images/wavy-lines.png";
-import project1 from "../assets/images/project1.jpg";
+import project1 from "../assets/images/project1.png";
 import project2 from "../assets/images/project2.jpg";
-import project3 from "../assets/images/project3.png";
+import project3 from "../assets/images/project3.jpg";
 import project4 from "../assets/images/project4.jpg";
+import photo1 from "../assets/images/photo1.jpg";
+import photo2 from "../assets/images/photo2.jpg";
+import photo3 from "../assets/images/photo3.jpg";
 
 const icons = {
+  close,
   arrow,
   direction,
   drill,
@@ -37,7 +42,16 @@ const icons = {
   twitterIcon,
 };
 
-const images = { wavyBg, project1, project2, project3, project4 };
+const images = {
+  wavyBg,
+  project1,
+  project2,
+  project3,
+  project4,
+  photo1,
+  photo2,
+  photo3,
+};
 
 const navlinks = [
   { title: "Home", href: "#home" },
@@ -79,7 +93,7 @@ const recentWorksDesc =
   "Dive into my latest projects showcasing cutting-edge design, advanced development, and creative solutions.";
 
 const footerDesc =
-  "Amet morbi justo facilisis integer odio eu feugiat egestas nulla a ipsum morbi iaculis urna nunc.";
+  "A dream doesn't become reality through magic; it takes sweat, determination, and hard work.";
 
 const ownerInfo = {
   email: "Josemariaofurum@gmail.com",
@@ -88,16 +102,18 @@ const ownerInfo = {
 };
 
 const socialLinks = [
-  { id: 1, icon: icons.fbIcon, href: "/" },
-  { id: 2, icon: icons.twitterIcon, href: "/" },
-  { id: 3, icon: icons.insta, href: "/" },
-  { id: 4, icon: icons.linkedIn, href: "/" },
-  { id: 5, icon: icons.github, href: "/" },
+  { id: 2, icon: icons.twitterIcon, href: "https://x.com/devjineer" },
+  {
+    id: 4,
+    icon: icons.linkedIn,
+    href: "https://www.linkedin.com/in/devjineer/",
+  },
+  { id: 5, icon: icons.github, href: "https://github.com/devjineer" },
 ];
 
 const quickLinks = [
-  { id: 1, title: "About Me", href: "/" },
-  { id: 2, title: "My Works", href: "/" },
+  { id: 1, title: "About Me", href: "#about" },
+  { id: 2, title: "My Works", href: "#works" },
   { id: 3, title: "Capabilities", href: "/" },
 ];
 
@@ -108,8 +124,8 @@ const projects = [
     stack: [],
     projectImage: images.project1,
     title: "EcoRide",
-    styling:
-      "lg:col-span-2 border h-[200px] lg:h-96 lg:rounded-tl-2xl rounded-md",
+    styling: "lg:col-span-2 h-[200px] lg:h-96 lg:rounded-tl-2xl rounded-md",
+    liveLink: "https://electric-keke-frontend.vercel.app/",
   },
   {
     id: 2,
@@ -117,23 +133,26 @@ const projects = [
     stack: [],
     projectImage: images.project2,
     title: "Dream House Renovations",
-    styling: "border h-[200px] lg:h-96 lg:rounded-tr-2xl rounded-md",
+    styling: "h-[200px] lg:h-96 lg:rounded-tr-2xl rounded-md",
+    liveLink: "https://dreamhome-renovations.vercel.app/",
   },
   {
     id: 3,
     company: "Personal Project",
     stack: [],
     projectImage: images.project3,
-    title: "Braniac",
-    styling: "border h-[200px] lg:h-96 lg:rounded-bl-2xl rounded-md",
+    title: "Brain Wave",
+    styling: "h-[200px] lg:h-96 lg:rounded-bl-2xl rounded-md",
+    liveLink: "https://brainwave-delta-umber.vercel.app/",
   },
   {
     id: 4,
     company: "Personal Project",
     stack: [],
     projectImage: images.project4,
-    title: "Apple Site",
-    styling: "border h-[200px] lg:h-96",
+    title: "Apple Iphone",
+    styling: "h-[200px] lg:h-96",
+    liveLink: "https://apple-one-phi.vercel.app/",
   },
 ];
 
@@ -146,7 +165,15 @@ const aboutItems = [
       "My engineering background gives me a strong foundation in problem-solving and a meticulous approach to development, allowing me to build robust and innovative solutions.",
     ],
   },
-  { id: 2, title: "Photo", photos: [project1, project2, project3, project4] },
+  {
+    id: 2,
+    title: "Photo",
+    photos: [
+      { photoSrc: photo1, photoStyle: "object-center" },
+      { photoSrc: photo2, photoStyle: "" },
+      { photoSrc: photo3, photoStyle: "object-top" },
+    ],
+  },
   {
     id: 3,
     stack: [cloudinary, javascript, react, reactrouter, redux, typescript],

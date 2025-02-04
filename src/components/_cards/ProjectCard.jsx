@@ -1,16 +1,24 @@
 import React from "react";
-import { DevGridItem } from "../_custom";
 import { IconWrapper, Overlay, TitleDescription } from "../_common";
 
-const ProjectCard = ({ styling, title, company, stack, projectImage, id }) => {
+const ProjectCard = ({
+  styling,
+  title,
+  company,
+  projectImage,
+  id,
+  liveLink,
+}) => {
   return (
     <a
-      href=""
+      href={liveLink}
       className={`relative overflow-hidden hover:scale-[1.025] transition-all ${styling}`}
+      target="_blank"
     >
       <IconWrapper
         src={projectImage}
         styling="h-full w-full"
+        addedIconStyles="object-top object-cover"
       />
       <Overlay styling="bg-gradient-to-b from-transparent to-black from-60% text-white p-4 flex flex-col justify-between">
         <span
@@ -18,7 +26,7 @@ const ProjectCard = ({ styling, title, company, stack, projectImage, id }) => {
             id === 1 ? "lg:text-7xl" : "lg:text-3xl"
           }`}
           onClick={(e) => {
-            e.stopPropagation()
+            e.stopPropagation();
             e.stopPropagation();
           }}
         >

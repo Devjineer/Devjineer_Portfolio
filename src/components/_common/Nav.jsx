@@ -10,7 +10,7 @@ const Nav = ({ styling, liStyle, closeBtn, handleClick }) => {
           onClick={handleClick}
           className="absolute top-4 right-4 cursor-pointer"
         >
-          <IconWrapper src={icons.menu} />
+          <IconWrapper src={icons.close} styling="size-10" />
         </button>
       )}
 

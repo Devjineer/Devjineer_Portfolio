@@ -15,17 +15,24 @@ const Footer = () => {
           <Connect />
         </div>
 
-        <FooterPack title="Contact Info" styling="text-sm lg:text-base space-y-3">
+        <FooterPack
+          title="Contact Info"
+          styling="text-sm lg:text-base space-y-3"
+        >
           <p>{ownerInfo.address}</p>
           <p>{ownerInfo.phone}</p>
           <a href={`mailto:${ownerInfo.email}`}>{ownerInfo.email}</a>
         </FooterPack>
 
         <FooterPack title="Quick Link" styling="">
-          <div className="space-y-3">
+          <div className="space-y-3 list-none">
             <RegularList
               data={quickLinks}
-              component={({ title, href }) => <p className="text-sm lg:text-base">{title}</p>}
+              component={({ title, href }) => (
+                <li className="text-sm lg:text-base">
+                  <a href={href}>{title}</a>
+                </li>
+              )}
             />
           </div>
         </FooterPack>

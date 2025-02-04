@@ -13,7 +13,7 @@ const MobileNav = () => {
 
       {toggleShow && (
         <Nav
-          styling="fixed top-0 left-0 list-none bg-white/60 backdrop-blur-sm w-full h-screen flex flex-col items-center justify-center"
+          styling="fixed top-0 left-0 list-none z-50 bg-white/60 backdrop-blur-sm w-full h-screen flex flex-col items-center justify-center"
           liStyle="text-3xl damion mb-3"
           handleClick={toggleToAndFro}
           closeBtn
